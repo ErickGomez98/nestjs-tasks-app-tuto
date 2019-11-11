@@ -1,0 +1,14 @@
+type Cat {
+  """
+  mira nomas papu esta es la doc
+  """
+  #y
+  id: Int @deprecated(reason: "ya we porfa")
+  name: String
+  age: Int
+}
+
+type Query {
+  getCats: [Cat]
+  catsx(id: ID!): Cat
+}
